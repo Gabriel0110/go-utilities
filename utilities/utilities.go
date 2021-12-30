@@ -1,4 +1,4 @@
-package github.com/Gabriel0110/go-utilities
+package utilities
 
 /*
 	Go utility functions for common tasks that aren't readily available like Python's
