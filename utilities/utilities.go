@@ -4,6 +4,10 @@ package utilities
 	Go utility functions for common tasks that aren't readily available like Python's
 */
 
+import (
+	"regexp"	
+)
+
 // Check if a slice contains an int value
 func ContainsInt(slice []int, num int) bool {
 	for _, v := range slice {
@@ -48,4 +52,10 @@ func binarySearch(arr []int, l int, r int, x int) int {
 	} else {
 		return -1
 	}
+}
+
+// Check if input string is an alpha numeric
+func isAlpha(s string) bool {
+	matched, _ := regexp.MatchString("[a-z0-9]", s)
+	return matched
 }
